@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>NetFlix-Login</title>
+</head>
+
+<body>
+    <div id="logo" onclick="location.href = 'https://www.netflix.com/'"
+        style="color : rgb(235, 11, 11); font-size : 45px; text-align : left; height :6vh; width : 100vw; font-weight :lighter">
+        <span style="margin-left : 20px;" class="logo">NETFLIX</span>
+    </div>
+    <div id="button"
+        style="color : rgb(169, 169, 169); font-size : 30px; text-align : right; height :4vh; width : 100vw; font-weight :lighter">
+        <span style="margin-right : 20px;" class="button">❌</span>
+    </div>
+    <div id="container">
+        <div id="bbody">
+            <div><span style="color : white; font-size : 18px; font-weight :normal; margin-bottom : 20px; ">Profile lock
+                    is currently turned on.</span><br>
+                <span style="color : white; font-size : 50px;">Enter your PIN number to use this profile.</span>
+            </div>
+            <table id="login">
+                <tr>
+                    <td class="t first"><input id="input" class="i first" type="password" maxlength="1"
+                            style="width : 100%;"></td>
+                    <td class="t second"><input id="input" class="i second" type="password" maxlength="1"
+                            style="width : 100%;"></td>
+                    <td class="t third"><input id="input" class="i third" type="password" maxlength="1"
+                            style="width : 100%;"></td>
+                    <td class="t fourth"><input id="input" class="i fourth" type="password" maxlength="1"
+                            style="width : 100%;"></td>
+                </tr>
+            </table>
+            <div style="color : red; font-size : 18px; font-weight :normal; margin-bottom : 20px;">PIN number must be 4
+                digits.</div>
+        </div>
+
+    </div>
+    <script src="login.js"></script>
+</body>
+
+</html>
