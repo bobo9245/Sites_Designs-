@@ -1,0 +1,32 @@
+*{
+  color:whitesmoke;
+}
+
+.app-index-box, .homepage{
+
+  display:flex;
+  align-items: center;
+  justify-content: center;
+
+  color:black;
+  font-weight: bolder;
+  text-align: center;
+  font-size:30px;
+  vertical-align: center;
+  background-color: aliceblue;
+  width:40vw;
+  height:60vh;
+  border-radius:20px;
+  box-shadow: 0 0 13px rgb(126, 125, 125);
+  user-select:none;
+}
+
+.app-index-box:hover{
+  cursor:pointer;
+  transform:scale(1.01);
+}
+
+.app-index-box:active{
+  position:relative;
+  top:2px;
+}
