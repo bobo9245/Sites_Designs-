@@ -1,6 +1,22 @@
 const btn = document.getElementById("button");
-
-btn.addEventListener("click",function(){
-    // alert(`${window.innerHeight}` + ' , ' + `${window.innerWidth}`);
-    document.write("<h1>`${window.innerHeight}` + ' , ' + `${window.innerWidth}`</h1>");
+const size = document.getElementById('size');
+var height,width;
+function renew(){
+    height = window.innerHeight;
+    width = window.innerWidth;
+}
+btn.addEventListener('click',()=>{
+    renew();
+    if(width >= 1000&& height <=300){
+        size.style.fontSize = "60px";
+    }else{
+        size.style.fontSize = "30px";
+    }
+}
+)
+$(window).resize(()=>{
+    renew();
+    console.clear();
+    console.log(height+" "+width);
+   
 })
