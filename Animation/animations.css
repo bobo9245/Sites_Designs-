@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+}
+#container{
+    position:absolute;
+    top:5%;
+    left:5%;
+    width:90%;
+    height:90%;
+    background-color: antiquewhite;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.63); 
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.63);
+    border:2px solid black;
+    border-radius: 5px;
+    padding:20px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap:20%;
+}
+#container *{
+    text-align: center;
+}
+#container * p{
+    font-weight:bold;
+}
+
+/*1. Flip*/
+.flip-card {
+    background-color: transparent;
+    width: 20%;
+    height: 20%;
+    perspective: 1000px;
+    /* 원근감을 나타냄. 3d transform에 사용.*/
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border: none;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    /*얘도 3d 변환에 사용, 3d를 사용할건지 말건지를 결정*/
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateX(-900deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 80px;
+    font-weight: bolder;
+    border:2px solid aquamarine;
+    border-radius:6%;
+}
+
+.flip-card-front {
+    background-color: #00f;
+    color: #fff
+}
+
+.flip-card-back {
+    background-color: #000;
+    color: #fff;
+    transform: rotateX(180deg);
+}
+.rotate{
+    background-color: transparent;
+    width:20%;
+    height:20%;
+    perspective:1000px;
+}
+.rotate-card{
+    position:relative;
+    width:100%;
+    height:100%;
+    background:radial-gradient(white,black);
+    border-radius:50%;
+    transition:transform 1s;
+}
+.rotate-card:hover{
+    transform:scale(2) rotateZ(-360deg);
+}
